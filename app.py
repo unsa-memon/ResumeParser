@@ -136,7 +136,7 @@ def extract_resume_info(text):
     words = re.findall(r"\b[a-zA-Z0-9\+\#]+\b", text.lower())
     skills = {word for word in words if word in master_skill_list}
 
-    return name, email, phone, address, skills
+    return name, email, phone,skills
 
 
 # Function to Normalize Resume Skills
