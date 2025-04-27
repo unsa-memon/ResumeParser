@@ -132,10 +132,6 @@ def extract_resume_info(text):
     phone_match = re.search(r"\(?\+?\d{1,4}?\)?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,4}", text)
     phone = phone_match.group(0) if phone_match else "Not Found"
 
-    # Address Extraction (improved regex to handle more address formats)
-    address_match = re.search(r"\b[A-Z][a-zA-Z\s]+,\s*[A-Z]{2,}", text)
-    address = address_match.group(0) if address_match else "Not Found"
-
     # Skills Extraction (check for skills in the master list)
     words = re.findall(r"\b[a-zA-Z0-9\+\#]+\b", text.lower())
     skills = {word for word in words if word in master_skill_list}
