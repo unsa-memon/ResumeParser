@@ -14,7 +14,7 @@ synonym_dict = {
     "data analysis": ["data analytics", "business intelligence"],
     "nlp": ["natural language processing"],
     "sql": ["structured query language"]
-
+}
 
 # Function to Extract Text from PDF
 def extract_text_from_pdf(pdf_path):
