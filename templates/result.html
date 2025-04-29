@@ -7,25 +7,29 @@
 </head>
 <body>
     <h1>Resume Analysis Results</h1>
+
     <p><strong>Name:</strong> {{ name }}</p>
     <p><strong>Email:</strong> {{ email }}</p>
     <p><strong>Phone:</strong> {{ phone }}</p>
     <p><strong>Matched Skills:</strong> {{ skills }}</p>
     <p><strong>Match Percentage:</strong> {{ percentage }}%</p>
 
-   
-
     <h3>Visualizations:</h3>
-    <img src="{{ url_for('static', filename='bar_chart.png') }}" alt="Bar Chart">
-    <img src="{{ url_for('static', filename='pie_chart.png') }}" alt="Pie Chart">
-    <!-- 🔹 Final Summary Statement -->
-    <h2 style="color: black;">
+    <img id=bar_chart src="{{ url_for('static', filename='bar_chart.png') }}" alt="Bar Chart">
+    <img id=pie_chart src="{{ url_for('static', filename='pie_chart.png') }}" alt="Pie Chart">
+
+    <h2>
         The candidate's resume skills are 
         <strong style="color: darkred;">{{ percentage }}%</strong> 
         matched with the job requirements.
     </h2>
+     <br>
+    <!-- 🔹 New Buttons Section -->
+    <div class="button-group">
+        <a href="/">Go Back</a>
+        <a href="/top-candidates">View Top Candidates</a>
     
-    <br><br>
-    <a href="/">Go Back</a>
+    </div>
+
 </body>
 </html>

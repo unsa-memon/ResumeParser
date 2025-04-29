@@ -1,32 +1,47 @@
+
 body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 20px;
 }
 
-form {
-    display: inline-block;
-    text-align: left;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-input, button {
+/* Bar Chart Styles */
+#bar_chart {
+    width: 60%;
+    margin: 20px auto;
     display: block;
-    margin: 10px 0;
-    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-button {
-    background-color: green;
+/* Pie Chart Styles */
+#pie_chart {
+    width: 60%;
+    margin: 30px auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin-top: -2px;
+}
+
+.button-group {
+    margin-top: 30px;
+}
+
+.button-group a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #186708;
     color: white;
-    border: none;
-    cursor: pointer;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
 }
-img{
-    margin-bottom: -5px;
-}
-h2{
-   margin-top:-2px;
+
+.button-group a:hover {
+    background-color: #23930d
 }
